@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <link rel="stylesheet" type="text/css" href="css/affablebean.css"></link>
+
+        <title>Cart</title>
+    </h:head>
+    <h:body>
+        <div id="main">
+            <div id="header">
+                <div id="widgetBar">
+
+                    <div class="headerWidget">
+                        [ language toggle ]
+                    </div>
+
+                    <div class="headerWidget"></div>
+
+                    <div class="headerWidget">
+                        [ shopping cart widget ]
+                    </div>
+
+                </div>
+
+                <h:outputLink>
+                    <h:graphicImage src="#" id="logo" alt="Affable Bean logo"/>
+                </h:outputLink>>
+
+                <h:graphicImage src="#" id="logoText" alt="the affable bean"/>
+            </div>
+
+            <div id="centerColumn">
+
+                <p>Your shopping cart contains x items.</p>
+
+                <div id="actionBar">
+                    <h:outputLink value="#" class="bubble hMargin">clear cart</h:outputLink>>
+                    <h:outputLink value ="#" class="bubble hMargin">continue shopping</h:outputLink>>
+                    <h:outputLink value ="#" class="bubble hMargin">proceed to checkout</h:outputLink>>
+                </div>
+
+                <h4 id="subtotal">[ subtotal: xxx ]</h4>
+
+                <h:dataTable id="cartTable">
+
+                    <tr class="header">
+                        <th>product</th>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>quantity</th>
+                    </tr>
+
+                    <tr>
+                        <td class="lightBlue">
+                            <h:graphicImage src="#" alt="product image"/>
+                        </td>
+                        <td class="lightBlue">[ product name ]</td>
+                        <td class="lightBlue">[ price ]</td>
+                        <td class="lightBlue">
+
+                            <h:form action="updateCart" method="post">
+                                <h:commandButton type="text"
+                                       maxlength="2"
+                                       size="2"
+                                       value="1"
+                                       name="quantity"/>
+                                <h:commandButton type="submit"
+                                       name="submit"
+                                       value="update button"/>
+                            </h:form>>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="white">
+                            <h:graphicImage src="#" alt="product image"/>
+                        </td>
+                        <td class="white">[ product name ]</td>
+                        <td class="white">[ price ]</td>
+                        <td class="white">
+
+                            <h:form action="updateCart" method="post">
+                                <h:commandButton type="text"
+                                       maxlength="2"
+                                       size="2"
+                                       value="1"
+                                       name="quantity"/>
+                                <h:commandButton type="submit"
+                                       name="submit"
+                                       value="update button"/>
+                            </h:form>>
+                            
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="lightBlue">
+                            <h:graphicImage src="#" alt="product image"/>
+                        </td>
+                        <td class="lightBlue">[ product name ]</td>
+                        <td class="lightBlue">[ price ]</td>
+                        <td class="lightBlue">
+
+                            <h:form action="updateCart" method="post">
+                                <h:commandButton type="text"
+                                       maxlength="2"
+                                       size="2"
+                                       value="1"
+                                       name="quantity"/>
+                                <h:commandButton type="submit"
+                                       name="submit"
+                                       value="update button"/>
+                            </h:form>
+                        </td>
+                    </tr>
+
+                </h:dataTable>>
+
+            </div>
+
+            <div id="footer">
+                <hr>
+                    <p id="footerText">[ footer text ]</p>
+                </hr>
+            </div>
+        </div>
+    </h:body>
+</html>
+

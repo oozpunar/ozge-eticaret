@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <link rel="stylesheet" type="text/css" href="css/affablebean.css"></link>
+        <title>Confirmation</title>
+    </h:head>
+    <h:body>
+        <div id="main">
+            <div id="header">
+                <div id="widgetBar">
+
+                    <div class="headerWidget">
+                        [ language toggle ]
+                    </div>
+
+                    <div class="headerWidget">
+                        [ checkout button ]
+                    </div>
+
+                    <div class="headerWidget">
+                        [ shopping cart widget ]
+                    </div>
+
+                </div>
+
+                <h:outputLink value ="#">
+                    <h:graphicImage src="#" id="logo" alt="Affable Bean logo"/>
+                </h:outputLink>>
+
+                <h:graphicImage src="#" id="logoText" alt="the affable bean"/>
+            </div>
+
+            <div id="categoryLeftColumn">
+                <div class="categoryButton" id="selectedCategory">
+                    <span class="categoryText">dairy</span>
+                </div>
+
+                <h:outputLink value ="#" class="categoryButton">
+                    <span class="categoryText">meats</span>
+                </h:outputLink>>
+
+                <h:outputLink value ="#" class="categoryButton">
+                    <span class="categoryText">bakery</span>
+                </h:outputLink>>
+
+                <h:outputLink value ="#" class="categoryButton">
+                    <span class="categoryText">fruit and veg</span>
+                </h:outputLink>>
+            </div>
+
+            <div id="categoryRightColumn">
+                <p id="categoryTitle">[ selected category ]</p>
+
+                <h:dataTable id="productTable">
+                    <tr>
+                        <td class="lightBlue">
+                            <h:graphicImage src="#" alt="product image"/>
+                        </td>
+                        <td class="lightBlue">
+                            [ product name ]
+                            <br/>
+                            <span class="smallText">[ product description ]</span>
+                        </td>
+                        <td class="lightBlue">[ price ]</td>
+                        <td class="lightBlue">
+                            <h:form action="#" method="post">
+                                <h:commandButton type="submit" value="purchase button"/>
+                            </h:form>>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="white">
+                            <h:graphicImage src="#" alt="product image"/>
+                        </td>
+                        <td class="white">
+                            [ product name ]
+                            <br/>
+                            <span class="smallText">[ product description ]</span>
+                        </td>
+                        <td class="white">[ price ]</td>
+                        <td class="white">
+                            <h:form action="#" method="post">
+                                <h:commandButton type="submit" value="purchase button"/>
+                            </h:form>>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="lightBlue">
+                            <h:graphicImage src="#" alt="product image"/>
+                        </td>
+                        <td class="lightBlue">
+                            [ product name ]
+                            <br/>
+                            <span class="smallText">[ product description ]</span>
+                        </td>
+                        <td class="lightBlue">[ price ]</td>
+                        <td class="lightBlue">
+                            <h:form action="#" method="post">
+                                <h:commandButton type="submit" value="purchase button"/>
+                            </h:form>>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="white">
+                            <h:graphicImage src="#" alt="product image"/>
+                        </td>
+                        <td class="white">
+                            [ product name ]
+                            <br/>
+                            <span class="smallText">[ product description ]</span>
+                        </td>
+                        <td class="white">[ price ]</td>
+                        <td class="white">
+                            <h:form action="#" method="post">
+                                <h:commandButton type="submit" value="purchase button"/>
+                            </h:form>>
+                        </td>
+                    </tr>
+                </h:dataTable>>
+            </div>
+
+            <div id="footer">
+                <hr/>
+                <p id="footerText">[ footer text ]</p>
+            </div>
+        </div>
+    </h:body>
+</html>
+
