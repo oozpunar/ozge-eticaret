@@ -24,11 +24,11 @@
 
                 </div>
 
-                <a href="#">
-                    <img src="#" id="logo" alt="Affable Bean logo"/>
-                </a>
+                <h:outputLink value ="#">
+                    <h:graphicImage src="#" id="logo" alt="Affable Bean logo"/>
+                </h:outputLink>>
 
-                <img src="#" id="logoText" alt="the affable bean"/>
+                <h:graphicImage src="#" id="logoText" alt="the affable bean"/>
             </div>
 
             <div id="centerColumn">
@@ -37,9 +37,9 @@
 
                 <p>[ text ]</p>
 
-                <form action="purchase" method="post">
+                <h:form action="purchase" method="post">
 
-                    <table id="checkoutTable">
+                    <h:dataTable id="checkoutTable">
                         <tr>
                             <td>[ form containing fields to
                                 <br/>capture customer details ]</td>
@@ -48,12 +48,12 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td><input type="submit" value="submit button"/></td>
+                            <td><h:commandButton type="submit" value="submit button"/></td>
                         </tr>
 
-                    </table>
+                    </h:dataTable>>
 
-                </form>
+                </h:form>>
 
                 <div id="infoBox">
 

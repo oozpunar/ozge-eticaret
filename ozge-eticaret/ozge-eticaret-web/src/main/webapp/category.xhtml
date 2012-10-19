@@ -25,11 +25,11 @@
 
                 </div>
 
-                <a href="#">
-                    <img src="#" id="logo" alt="Affable Bean logo"/>
-                </a>
+                <h:outputLink value="#">
+                    <h:graphicImage src="#" id="logo" alt="Affable Bean logo"/>
+                </h:outputLink>>
 
-                <img src="#" id="logoText" alt="the affable bean"/>
+                <h:graphicImage src="#" id="logoText" alt="the affable bean"/>
             </div>
 
             <div id="categoryLeftColumn">
@@ -37,26 +37,26 @@
                     <span class="categoryText">dairy</span>
                 </div>
 
-                <a href="#" class="categoryButton">
+                <h:outputLink value ="#" class="categoryButton">
                     <span class="categoryText">meats</span>
-                </a>
+                </h:outputLink>>
 
-                <a href="#" class="categoryButton">
+                <h:outputLink value ="#" class="categoryButton">
                     <span class="categoryText">bakery</span>
-                </a>
+                </h:outputLink>>
 
-                <a href="#" class="categoryButton">
+                <h:outputLink value ="#" class="categoryButton">
                     <span class="categoryText">fruit and veg</span>
-                </a>
+                </h:outputLink>>
             </div>
 
             <div id="categoryRightColumn">
                 <p id="categoryTitle">[ selected category ]</p>
 
-                <table id="productTable">
+                <h:dataTable id="productTable">
                     <tr>
                         <td class="lightBlue">
-                            <img src="#" alt="product image"/>
+                            <h:graphicImage src="#" alt="product image"/>
                         </td>
                         <td class="lightBlue">
                             [ product name ]
@@ -65,15 +65,15 @@
                         </td>
                         <td class="lightBlue">[ price ]</td>
                         <td class="lightBlue">
-                            <form action="#" method="post">
-                                <input type="submit" value="purchase button"/>
-                            </form>
+                            <h:form action="#" method="post">
+                                <h:commandButton type="submit" value="purchase button"/>
+                            </h:form>>
                         </td>
                     </tr>
 
                     <tr>
                         <td class="white">
-                            <img src="#" alt="product image"/>
+                            <h:graphicImage src="#" alt="product image"/>
                         </td>
                         <td class="white">
                             [ product name ]
@@ -82,15 +82,15 @@
                         </td>
                         <td class="white">[ price ]</td>
                         <td class="white">
-                            <form action="#" method="post">
-                                <input type="submit" value="purchase button"/>
-                            </form>
+                            <h:form action="#" method="post">
+                                <h:commandButton type="submit" value="purchase button"/>
+                            </h:form>>
                         </td>
                     </tr>
 
                     <tr>
                         <td class="lightBlue">
-                            <img src="#" alt="product image"/>
+                            <h:dataTable src="#" alt="product image"/>
                         </td>
                         <td class="lightBlue">
                             [ product name ]
@@ -99,15 +99,15 @@
                         </td>
                         <td class="lightBlue">[ price ]</td>
                         <td class="lightBlue">
-                            <form action="#" method="post">
-                                <input type="submit" value="purchase button"/>
-                            </form>
+                            <h:form action="#" method="post">
+                                <h:commandButton type="submit" value="purchase button"/>
+                            </h:form>>
                         </td>
                     </tr>
 
                     <tr>
                         <td class="white">
-                            <img src="#" alt="product image"/>
+                            <h:graphicImage src="#" alt="product image"/>
                         </td>
                         <td class="white">
                             [ product name ]
@@ -116,12 +116,12 @@
                         </td>
                         <td class="white">[ price ]</td>
                         <td class="white">
-                            <form action="#" method="post">
-                                <input type="submit" value="purchase button"/>
-                            </form>
+                            <h:form action="#" method="post">
+                                <h:commandButton type="submit" value="purchase button"/>
+                            </h:form>>
                         </td>
                     </tr>
-                </table>
+</h:dataTable>>
             </div>
 
             <div id="footer">
